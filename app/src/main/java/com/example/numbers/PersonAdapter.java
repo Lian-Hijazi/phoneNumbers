@@ -56,11 +56,8 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.itemView.setTag(pepole.get(position));
         holder.tvName.setText(pepole.get(position).getName());
-        if(pepole.get(position).getImage()!=null)
-        {holder.imageView.setImageResource(pepole.get(position).getImage());}
-        else{
-            holder.imageView.setImageResource(R.drawable.contact_phone);
-        }
+        holder.imageView.setImageResource(pepole.get(position).getImage());
+
     }
 
 

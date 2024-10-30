@@ -39,6 +39,8 @@ public class addFrag extends Fragment {
                    name=etName.getText().toString().trim();
                    phone=etPhone.getText().toString().trim();
                    MainActivity.people.add(new Person(name,phone));
+                   etPhone.setText(null);
+                   etName.setText(null);
                    Toast.makeText(getActivity(),"person added successfully",Toast.LENGTH_SHORT).show();
                    listFrag.notifyDataSetChanged();
                }

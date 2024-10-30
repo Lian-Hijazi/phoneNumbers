@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements PersonAdapter.Ite
 
     public void onItemClicked(int Index) {
         if(!people.isEmpty()) {
-            detailsFrag.updateTexts(people.get(Index).getName(), people.get(Index).getPhone());
+                detailsFrag.updateTexts(people.get(Index).getName(), people.get(Index).getPhone(),people.get(Index).getImage());
         }
         else
             return ;

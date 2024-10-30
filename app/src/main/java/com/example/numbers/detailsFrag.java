@@ -16,7 +16,7 @@ public class detailsFrag extends Fragment {
 
     private TextView tvName;
     private TextView phone;
-    ImageView img;
+    public ImageView img;
 
     public detailsFrag() {
         // Required empty public constructor
@@ -42,8 +42,12 @@ public class detailsFrag extends Fragment {
         return view;
     }
 
-    public void updateTexts(String st1,String st2){
+    public void setImg(int id)
+    {img.setImageResource(id);}
+
+    public void updateTexts(String st1,String st2,int img){
         tvName.setText(st1);
         phone.setText(st2);
+        this.img.setImageResource(img);
     }
 }

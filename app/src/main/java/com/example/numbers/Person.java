@@ -9,6 +9,7 @@ public class Person {
     public Person(String name,String phone) {
         this.name = name;
         this.phone=phone;
+        image=R.drawable.contact_phone;
     }
 
     public Person(String name,String phone,int image) {
